@@ -1,10 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import Section from './section'
 
 function home() {
   return (
     <Container>
-      home
+      <Section/>
     </Container>
   )
 }
