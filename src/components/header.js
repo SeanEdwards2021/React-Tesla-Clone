@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import {Lock} from 'styled-icons/material'
 
 function header() {
   return (
@@ -15,13 +14,13 @@ function header() {
         <a href="#">Model 3</a>
         <a href="#">Model X</a>
         <a href="#">Model Y</a>
+        <a href="#">Powerwall</a>
+        <a href="#">Charging</a>
       </Menu>
       <RightMenu>
         <a href="#">Shop</a>
         <a href="#">Tesla Account</a>
-        <CustomMenu>
-
-        </CustomMenu>
+        <a href="#">Menu</a>
       </RightMenu>
     </Container>
   )
@@ -39,6 +38,7 @@ const Container = styled.div`
   top: 0;
   left: 0;
   right: 0;
+  font-size: 12px
 `
 const NavIcon = styled.div`
   width: 33.3vh;
@@ -73,10 +73,5 @@ const RightMenu = styled.div`
     text-transform: uppercase;
     margin-right: 20px
   }
-`
-
-const CustomMenu = styled(Lock)`
-  cursor: pointer;
-  height 15px;
 `
 
