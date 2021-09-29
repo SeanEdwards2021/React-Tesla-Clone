@@ -93,17 +93,13 @@ const Menu = styled.div`
 `
 
 const RightMenu = styled.div`
-  display: flex:
+  display: flex;
   align-items: center;
   width: 33.3vh;
 
   a {
     font-weight: 600;
-    margin-right: 20px
-
-    @media(max-width: 768px) {
-      display:none;
-    }
+    margin-right: 20px;
   }
 `
 const SideMenuNav = styled.div `
