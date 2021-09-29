@@ -33,7 +33,7 @@ function home() {
         title="Model X"
         description="1% Company Car Tax. Learn More"
         leftBtnText="Custom Order"
-        rightBtnText="Existing Inventory"
+        rightBtnText="Available Inventory"
         testDriveText = ""
         backgroundImg="model-x.jpg"
       />
