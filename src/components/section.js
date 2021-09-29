@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade';
 
-function section({title, description, leftBtnText, rightBtnText, backgroundImg}) {
+function section({title, description, leftBtnText, rightBtnText, backgroundImg, testDriveText}) {
   return (
     <Wrap bgImage={backgroundImg}>
       <Fade bottom>
@@ -25,6 +25,9 @@ function section({title, description, leftBtnText, rightBtnText, backgroundImg})
               </RightButton>
             }
           </ButtonGroup>
+          <TestDriveText>
+            <p>{testDriveText}</p>
+          </TestDriveText>
         </Fade>
         <DownArrow src="/images/down-arrow.svg" />
       </Buttons>
@@ -57,7 +60,7 @@ const Buttons = styled.div`
 
 const ButtonGroup = styled.div`
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -86,8 +89,15 @@ const RightButton = styled(LeftButton)`
   color: black;
 `
 
+const TestDriveText = styled.div`
+  p {
+    text-decoration: underline;
+  }
+`
+
 const DownArrow = styled.img`
   height: 40px;
   overflow-x: hidden;
   animation: animateDown infinite 1.5s;
+  margin-top: 15px;
 `
