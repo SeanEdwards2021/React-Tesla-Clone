@@ -42,10 +42,6 @@ const Container = styled.div`
 `
 const NavIcon = styled.div`
   width: 33.3vh;
-
-  a {
-    left: 0;
-  }
 `
 
 const Menu = styled.div`
@@ -58,7 +54,7 @@ const Menu = styled.div`
   a {
     font-weight: 600;
     text-transform: uppercase;
-    padding: 0 10px;
+    padding: 0 20px;
     flex-wrap: nowrap;
   }
 
@@ -75,7 +71,7 @@ const RightMenu = styled.div`
   a {
     font-weight: 600;
     text-transform: uppercase;
-    margin-right: 10px
+    margin-right: 20px
   }
 `
 
