@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { FaTimes } from 'react-icons/fa';
+
+
 
 function header() {
   return (
@@ -20,8 +23,31 @@ function header() {
       <RightMenu>
         <a href="#">Shop</a>
         <a href="#">Tesla Account</a>
-        <a href="#">Menu</a>
+        <SideMenuButton>
+          <a href="#">Menu</a>
+        </SideMenuButton>
       </RightMenu>
+      <SideMenuNav>
+        <CloseWrapper>
+          <CustomClose/>
+        </CloseWrapper>
+        <li><a href="#">Existing Inventory</a></li>
+        <li><a href="#">Used Inventory</a></li>
+        <li><a href="#">Trade-In</a></li>
+        <li><a href="#">Test Drive</a></li>
+        <li><a href="#">Fleet and Business</a></li>
+        <li><a href="#">Cybertruck</a></li>
+        <li><a href="#">Roadster</a></li>
+        <li><a href="#">Charging</a></li>
+        <li><a href="#">Semi</a></li>
+        <li><a href="#">Commercial Energy</a></li>
+        <li><a href="#">Energy</a></li>
+        <li><a href="#">Charging</a></li>
+        <li><a href="#">Find Us</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Investor Relations</a></li>
+      </SideMenuNav>
     </Container>
   )
 }
@@ -39,6 +65,7 @@ const Container = styled.div`
   left: 0;
   right: 0;
   font-size: 16px
+  z-index: 1;
 `
 const NavIcon = styled.div`
   width: 33.3vh;
@@ -70,6 +97,43 @@ const RightMenu = styled.div`
   a {
     font-weight: 600;
     margin-right: 20px
+
+    @media(max-width: 768px) {
+      display:none;
+    }
   }
 `
+const SideMenuNav = styled.div `
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: white;
+  width: 300px;
+  z-index: 10;
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
 
+  li {
+    padding: 10px 20px;
+
+    a{
+      font-weight: 600;
+    }
+  }
+`
+const SideMenuButton = styled.div `
+
+`
+
+const CustomClose = styled(FaTimes)`
+  cursor: pointer;
+`
+
+const CloseWrapper = styled.div`
+  display: flex;
+  Justify-content: flex-end;
+`
