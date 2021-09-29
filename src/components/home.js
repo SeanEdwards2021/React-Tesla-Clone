@@ -6,45 +6,51 @@ function home() {
   return (
     <Container>
       <Section
-        title="Model S"
-        description="Order Online for Touchless Delivery"
-        leftBtnText="Custom Order"
-        rightBtnText="Existing Inventory"
-        backgroundImg="model-s.jpg"
-      />
-      <Section
-        title="Model Y"
-        description="Order Online for Touchless Delivery"
-        leftBtnText="Custom Order"
-        rightBtnText="Existing Inventory"
-        backgroundImg="model-y.jpg"
-      />
-      <Section
         title="Model 3"
-        description="Order Online for Touchless Delivery"
+        description="1% Company Car Tax. Learn More"
         leftBtnText="Custom Order"
-        rightBtnText="Existing Inventory"
+        rightBtnText="Available Inventory"
+        testDriveText = "Schedule a Touchless Test Drive"
         backgroundImg="model-3.jpg"
       />
       <Section
+        title="Model S"
+        description="1% Company Car Tax. Learn More"
+        leftBtnText="Custom Order"
+        rightBtnText="Available Inventory"
+        testDriveText = ""
+        backgroundImg="model-s.jpg"
+      />
+      <Section
+        title="Solar and Powerwall"
+        description="Power Everything"
+        leftBtnText="Learn more"
+        rightBtnText=""
+        testDriveText = ""
+        backgroundImg="solar-panel.jpg"
+      />
+      <Section
         title="Model X"
-        description="Order Online for Touchless Delivery"
+        description="1% Company Car Tax. Learn More"
         leftBtnText="Custom Order"
         rightBtnText="Existing Inventory"
+        testDriveText = ""
         backgroundImg="model-x.jpg"
       />
       <Section
-        title="Lowest Cost Solar Panels in America"
-        description="Money-back guarantee"
-        leftBtnText="Order now"
-        rightBtnText="Learn more"
-        backgroundImg="solar-panel.jpg"
+        title="Model Y"
+        description=""
+        leftBtnText="Learn More"
+        rightBtnText=""
+        testDriveText = ""
+        backgroundImg="model-y.jpg"
       />
       <Section
         title="Solar for New Roofs"
         description="Solar Roof Cost Less Than a New Roof Plus Solar Panels"
         leftBtnText="Order now"
         rightBtnText="Learn more"
+        testDriveText = ""
         backgroundImg="solar-roof.jpg"
       />
       <Section
@@ -52,6 +58,7 @@ function home() {
         description=""
         leftBtnText="Shop Now"
         rightBtnText=""
+        testDriveText = ""
         backgroundImg="accessories.jpg"
       />
     </Container>
