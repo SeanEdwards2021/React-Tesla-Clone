@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import Section from './section'
+import Section from './Section'
 
-function home() {
+function Home() {
   return (
     <Container>
       <Section
@@ -65,7 +65,7 @@ function home() {
   )
 }
 
-export default home
+export default Home
 
 const Container = styled.div`
   height: 100vh;

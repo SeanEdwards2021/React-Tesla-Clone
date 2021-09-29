@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Fade from 'react-reveal/Fade';
 
-function section({title, description, leftBtnText, rightBtnText, backgroundImg, testDriveText}) {
+function Section({title, description, leftBtnText, rightBtnText, backgroundImg, testDriveText}) {
   return (
     <Wrap bgImage={backgroundImg}>
       <Fade bottom>
@@ -35,7 +35,7 @@ function section({title, description, leftBtnText, rightBtnText, backgroundImg, 
   )
 }
 
-export default section
+export default Section
 
 const Wrap = styled.div`
   width: 100vw;

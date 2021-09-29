@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import styled from 'styled-components'
 import { FaTimes } from 'react-icons/fa';
 
 
 
-function header() {
+function Header() {
+
+  const [sideMenuStatus, setSideMenuStatus] = useState(false);
+
   return (
     <Container>
       <NavIcon>
@@ -24,12 +27,12 @@ function header() {
         <a href="#">Shop</a>
         <a href="#">Tesla Account</a>
         <SideMenuButton>
-          <a href="#">Menu</a>
+          <a onClick={()=>setSideMenuStatus(true)} href="#">Menu</a>
         </SideMenuButton>
       </RightMenu>
-      <SideMenuNav>
+      <SideMenuNav show={sideMenuStatus}>
         <CloseWrapper>
-          <CustomClose/>
+          <CustomClose onClick={()=>setSideMenuStatus(false)}/>
         </CloseWrapper>
         <li><a href="#">Existing Inventory</a></li>
         <li><a href="#">Used Inventory</a></li>
@@ -52,7 +55,7 @@ function header() {
   )
 }
 
-export default header
+export default Header
 
 const Container = styled.div`
   min-height: 60px;
@@ -116,6 +119,7 @@ const SideMenuNav = styled.div `
   display: flex;
   flex-direction: column;
   text-align: start;
+  transform: ${props => props.show ? 'translateX(0)': 'translateX(100%)'};
 
   li {
     padding: 10px 20px;
