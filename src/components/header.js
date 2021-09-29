@@ -5,9 +5,11 @@ import {Lock} from 'styled-icons/material'
 function header() {
   return (
     <Container>
-      <a>
-        <img src="/images/logo.svg" alt="Tesla Logo" />
-      </a>
+      <NavIcon>
+        <a>
+          <img src="/images/logo.svg" alt="Tesla Logo" />
+        </a>
+      </NavIcon>
       <Menu>
         <a href="#">Model S</a>
         <a href="#">Model 3</a>
@@ -38,12 +40,20 @@ const Container = styled.div`
   left: 0;
   right: 0;
 `
+const NavIcon = styled.div`
+  width: 33.3vh;
+
+  a {
+    left: 0;
+  }
+`
 
 const Menu = styled.div`
   display: flex;
   align-items:center;
   justify-content: center;
   flex: 1;
+  width: 33.3vh;
 
   a {
     font-weight: 600;
@@ -60,6 +70,7 @@ const Menu = styled.div`
 const RightMenu = styled.div`
   display: flex:
   align-items: center;
+  width: 33.3vh;
 
   a {
     font-weight: 600;
@@ -72,3 +83,4 @@ const CustomMenu = styled(Lock)`
   cursor: pointer;
   height 15px;
 `
+
