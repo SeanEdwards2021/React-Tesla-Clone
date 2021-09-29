@@ -5,7 +5,18 @@ import Section from './section'
 function home() {
   return (
     <Container>
-      <Section/>
+      <Section
+      
+      />
+      <Section
+      
+      />
+      <Section
+      
+      />
+      <Section
+      
+      />
     </Container>
   )
 }
