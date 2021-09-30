@@ -1,12 +1,13 @@
-import React, {useState} from 'react'
-import styled from 'styled-components'
+import React, {useState} from 'react';
+import styled from 'styled-components';
 import {FaTimes} from 'react-icons/fa';
-
-
+import {selectCars} from '../features/car/carSlice';
+import{useSelector} from 'react-redux';
 
 function Header() {
 
   const [sideMenuStatus, setSideMenuStatus] = useState(false);
+  const cars = useSelector(selectCars)
 
   return (
     <Container>
@@ -16,10 +17,11 @@ function Header() {
         </a>
       </NavIcon>
       <Menu>
-        <a href="#">Model S</a>
-        <a href="#">Model 3</a>
-        <a href="#">Model X</a>
-        <a href="#">Model Y</a>
+
+        {cars && cars.map((car, index) =>(
+          <a key ={index} href="#">{car}</a>
+        ))}
+
         <a href="#">Powerwall</a>
         <a href="#">Charging</a>
       </Menu>
