@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import styled from 'styled-components'
-import { FaTimes } from 'react-icons/fa';
+import {FaTimes} from 'react-icons/fa';
 
 
 
@@ -116,6 +116,7 @@ const SideMenuNav = styled.div `
   flex-direction: column;
   text-align: start;
   transform: ${props => props.show ? 'translateX(0)': 'translateX(100%)'};
+  transition: transform 0.2s ease-in-out;
 
   li {
     padding: 10px 20px;
